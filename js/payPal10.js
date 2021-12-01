@@ -13,7 +13,7 @@ function activatePPBtn() {
             },
            onApprove: function(data, actions) {
             return actions.order.capture().then(function(details) {
-                payment_complete(details.payer.name.given_name);
+                payment_complete(details);
             });
             }
         });

@@ -7,7 +7,9 @@ function total() {
 
 }
 
-function payment_complete(details) {
+function payment_complete(dets) {
     byid('coPar').style.visibility = 'hidden' ;  
     byid('orderOK').style.visibility = 'visible';
+    byid('ppxid').innerHTML = dets.id;
+    // dets.payer.name.given_name   - another option
 }
