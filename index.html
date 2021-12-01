@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>pizza shop ordering</title>
+
+<style>
+    label { padding-right: 1ex; }
+    .qty  { font-family: monospace; width: 5.5ex; }
+    .ppex { margin-top: 4ex; }
+    .price{ padding-left: 1ex; }
+</style>
+
+
+</head>
+<body>
+<div>
+    <div><label>pepperoni qty</label>
+        <input class='qty' type='number' step='1' min='0' max='999' data-priceElement='pepprice' id='pepqty' oninput='retotal(this);' />
+        <span class='price'>$<span id='pepprice'>5</span> each</span>
+    </div>
+    <div><label>total</label>$<span id='total'></span></div>
+        
+</div>
+
+	<div class='ppex'>
+		<a href='https://kwynn.com/t/20/11/pp/example10.html'>PayPal examples</a>
+	</div>
+	
+<div style='margin-top: 4ex'>
+    <a href="https://validator.w3.org/check?uri=referer"><img
+        src="media/html5valid.jpg"
+        alt="HTML5 valid" width="103" height="36" /></a>
+</div>
+	
+</body>
+</html>
+
+
+
+
+
