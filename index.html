@@ -6,6 +6,9 @@
 
 <title>pizza shop ordering</title>
 
+<script src='js/utils.js'></script>
+<script src='js/js10.js'></script>
+
 <style>
     label { padding-right: 1ex; }
     .qty  { font-family: monospace; width: 5.5ex; }
@@ -18,7 +21,7 @@
 <body>
 <div>
     <div><label>pepperoni qty</label>
-        <input class='qty' type='number' step='1' min='0' max='999' data-priceElement='pepprice' id='pepqty' oninput='retotal(this);' />
+        <input class='qty' type='number' step='1' min='0' max='999' data-priceelement='pepprice' id='pepqty' oninput='total(this);' />
         <span class='price'>$<span id='pepprice'>5</span> each</span>
     </div>
     <div><label>total</label>$<span id='total'></span></div>
