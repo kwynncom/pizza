@@ -8,12 +8,20 @@
 
 <script src='js/utils.js'></script>
 <script src='js/js10.js'></script>
+<script src='js/payPal10.js'></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AeIzMoxmCyjQkAp-KjWi3PlRC16q17wekFImr0sjds7Voe2acLyk5wNdHmate9LI0xIxIEPp8tMyg8VH">/* sandbox client ID */</script>
+
+<script>
+    window.onload = total;
+</script>
 
 <style>
     label { padding-right: 1ex; }
     .qty  { font-family: monospace; width: 5.5ex; }
     .ppex { margin-top: 4ex; }
     .price{ padding-left: 1ex; }
+    .coPar { visibility: hidden; }
+    #orderOK { visibility: hidden; }
 </style>
 
 
@@ -21,11 +29,15 @@
 <body>
 <div>
     <div><label>pepperoni qty</label>
-        <input class='qty' type='number' step='1' min='0' max='999' data-priceelement='pepprice' id='pepqty' oninput='total(this);' />
+        <input class='qty' type='number' step='1' min='0' max='999' data-priceelement='pepprice' id='pepqty' oninput='total();' />
         <span class='price'>$<span id='pepprice'>5</span> each</span>
     </div>
     <div><label>total</label>$<span id='total'></span></div>
-        
+    <div id='coPar'>to checkout press the PayPal button: 
+        <div>For the sandbox / testing, your life is somewhat easier if you create a sandbox PayPal account.  Otherwise, use "... or Pay with Debit or Credit Card" / AmEx 378282246310005 , CVV 1234, something close to a real address, a fake phone number, continue as guest...</div>
+        <div id="paypal-button-container"></div>
+    </div>
+    <div id='orderOK'>order made! - client side confirmation</div>
 </div>
 
 	<div class='ppex'>
