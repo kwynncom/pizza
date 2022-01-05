@@ -37,6 +37,13 @@
 		
 	</p>
 	
+	<p>Remember that /opt/kwynn is a clone of <a href='https://github.com/kwynncom/kwynn-php-general-utils'>my general PHP utilities</a>.  
+		
+	</p>
+	<p>Updated 2022/01/04 23:35.
+		
+	</p>
+	
 <div>
     <div><label>pepperoni qty</label>
         <input class='qty' type='number' step='1' min='0' max='999' data-priceelement='pepprice' id='pepqty' oninput='total();' />
