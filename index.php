@@ -27,6 +27,16 @@
 
 </head>
 <body>
+	<div>
+		<p>Session ID from Kwynn's own function:
+		<?php require_once('/opt/kwynn/kwutils.php');
+			echo(startSSLSession());
+			?></p>
+	</div>
+	<p><a href='page2.php'>page 2</a>, to demo session
+		
+	</p>
+	
 <div>
     <div><label>pepperoni qty</label>
         <input class='qty' type='number' step='1' min='0' max='999' data-priceelement='pepprice' id='pepqty' oninput='total();' />
